@@ -1,0 +1,21 @@
+{
+  "logo": "/images/logo.png",
+  "phone": "+234",
+  "email": "mfmeleme@gmail.com",
+  "address_line1": "MFM Eleme",
+  "address_line2": "Opposite New Town Junction",
+  "address_city": "Ogale Eleme, Rivers State",
+  "postal_code": "511101",
+  "facebook": "https://www.facebook.com/pstchucksdamiro",
+  "youtube": "https://www.youtube.com/@PastorchucksDamiro",
+  "tiktok": "https://www.tiktok.com/@pastorchucksdamiroo",
+  "services": [
+    { "text": "Come join us this Sunday at 7:00 am (WAT) for a refreshing time in God's presence." },
+    { "text": "Breakthrough Service \u2013 Every Monday by 6:30am (WAT)" },
+    { "text": "Manna Water (Wednesday Interdominational Service) \u2013 Every Wednesday by 4:30pm (WAT). Jesus is Lord!" }
+  ],
+  "broadcasts": [
+    { "text": "Prophetic Prayer Hour \u2013 Every Tuesday by 12:00 am & 12:00 pm (WAT)" },
+    { "text": "One Hour Deliverance Prayer \u2013 Everyday 12:00am" }
+  ]
+}

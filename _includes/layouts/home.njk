@@ -1,0 +1,56 @@
+---
+layout: layouts/base.njk
+---
+<section class="hero" id="home">
+  {% for slide in slides %}
+  <div class="hero-slide {% if loop.first %}active{% endif %}" style="background-image:url('{{ slide.image }}')">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>{{ slide.heading | nl2br | safe }}</h1>
+      <p class="verse">{{ slide.verse }}</p>
+      <span class="verse-source">{{ slide.source }}</span>
+      <div class="cta-group">
+        <a href="#live" class="btn btn-magenta">Join Us Live</a>
+        <a href="#worship" class="btn btn-orange-outline-onimage">Worship With Us</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+  <div class="logo-float" style="background-image:url('{{ settings.logo }}')"></div>
+</section>
+<div class="hero-spacer"></div>
+
+<section class="info-section">
+  <div class="info-card">
+    <div class="info-card-title">ONLINE SERVICES</div>
+    <div class="info-card-body">
+      {% for s in settings.services %}<p>{{ s.text }}</p>{% endfor %}
+      <div class="social-icons">
+        <a href="{{ settings.youtube }}" class="yt" target="_blank" rel="noopener" aria-label="YouTube">▶</a>
+        <a href="{{ settings.facebook }}" class="fb" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+        <a href="{{ settings.tiktok }}" class="tt" target="_blank" rel="noopener" aria-label="TikTok">♪</a>
+      </div>
+      <div class="info-card-cta"><a href="#live" class="btn btn-magenta">Join Us Live</a></div>
+    </div>
+  </div>
+
+  <div class="info-card">
+    <div class="info-card-title">ONLINE BROADCASTS</div>
+    <div class="info-card-body">
+      {% for b in settings.broadcasts %}<p>{{ b.text }}</p>{% endfor %}
+      <div class="social-icons">
+        <a href="{{ settings.youtube }}" class="yt" target="_blank" rel="noopener" aria-label="YouTube">▶</a>
+        <a href="{{ settings.facebook }}" class="fb" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+        <a href="{{ settings.tiktok }}" class="tt" target="_blank" rel="noopener" aria-label="TikTok">♪</a>
+      </div>
+      <div class="info-card-cta"><a href="#live" class="btn btn-magenta">Join Us Live</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery-section">
+  <div class="gallery-title">OUR CHURCH</div>
+  <div class="gallery-grid">
+    {% for g in gallery %}<img src="{{ g.image }}" alt="Mountain of Fire and Miracles Ministries, Eleme">{% endfor %}
+  </div>
+</section>

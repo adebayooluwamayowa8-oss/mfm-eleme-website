@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ title }} | Mountain of Fire and Miracles Ministries — Eleme</title>
+<link rel="icon" href="{{ settings.logo }}">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-row">
+    <a href="/" class="logo-badge" style="background-image:url('{{ settings.logo }}')" aria-label="MFM Eleme home"></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="mainNav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/who-we-are/">Who We Are</a></li>
+        <li><a href="/what-we-do/">What We Do</a></li>
+        <li><a href="/resources/">Resources</a></li>
+        <li><a href="/contact/">Contact Us</a></li>
+      </ul>
+      <div class="nav-buttons">
+        <a href="#live" class="btn btn-white">Join Us Live</a>
+        <a href="#worship" class="btn btn-magenta">Worship With Us</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+{{ content | safe }}
+
+<footer class="contact" id="contact">
+  <div class="block">
+    <h2>CONTACT</h2>
+    <p>Phone: {{ settings.phone }}</p>
+    <p>Email: {{ settings.email }}</p>
+  </div>
+  <div class="block">
+    <p>{{ settings.address_line1 }}</p>
+    <p>{{ settings.address_line2 }}</p>
+    <p>{{ settings.address_city }}</p>
+    <p>{{ settings.postal_code }}</p>
+    <div class="social-icons">
+      <a href="{{ settings.youtube }}" class="yt" target="_blank" rel="noopener" aria-label="YouTube">▶</a>
+      <a href="{{ settings.facebook }}" class="fb" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+      <a href="{{ settings.tiktok }}" class="tt" target="_blank" rel="noopener" aria-label="TikTok">♪</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", function (user) {
+      if (!user) {
+        window.netlifyIdentity.on("login", function () {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+</body>
+</html>
