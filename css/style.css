@@ -298,6 +298,66 @@ nav ul li a{
 .page-body-inner li{ margin-bottom: 8px; }
 .page-body-inner em{ color:#6b6b6b; }
 
+/* ---------- SERMONS ---------- */
+.sermon-item{
+  border-bottom: 1px solid #e5dcdc;
+  padding: 22px 0;
+}
+.sermon-item:first-child{ padding-top: 0; }
+.sermon-item h3{
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+.sermon-meta{
+  font-size: 13px;
+  color:#7a7a7a;
+  margin-bottom: 12px !important;
+}
+.sermon-listen-btn{
+  display:inline-block;
+  padding: 9px 18px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.sermon-description{ font-size: 14px; color:#3a3a3a; }
+
+/* ---------- GIVING ---------- */
+.accounts-grid{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin: 20px 0;
+}
+.account-card{
+  background: var(--pink-bg);
+  border-radius: 6px;
+  padding: 18px 20px;
+  position: relative;
+}
+.account-currency{
+  position:absolute;
+  top:12px; right:14px;
+  background: var(--magenta);
+  color:#fff;
+  font-size: 11px;
+  font-weight:700;
+  padding: 3px 9px;
+  border-radius: 20px;
+}
+.account-bank{ font-weight:700; margin-bottom:4px !important; }
+.account-name{ font-size:14px; margin-bottom:4px !important; }
+.account-number{ font-size: 16px; font-weight:700; letter-spacing:.5px; color: var(--magenta-dark); }
+.giving-note{ font-size: 13px; color:#7a7a7a; margin-top: 10px; }
+
+/* ---------- RESOURCE LINKS ---------- */
+.links-heading{
+  font-size: 17px;
+  margin: 24px 0 12px;
+}
+.links-list{ list-style: disc; margin-left: 20px; }
+.links-list li{ margin-bottom: 10px; }
+.links-list a{ color: var(--magenta-dark); text-decoration: underline; }
+
 /* ---------- CONTACT ---------- */
 .contact{
   background: var(--dark);
@@ -366,4 +426,5 @@ nav ul li a{
 
   .page-hero h1{ font-size: 34px; }
   .page-body-inner{ font-size: 16px; }
+  .accounts-grid{ grid-template-columns: repeat(2, 1fr); }
 }

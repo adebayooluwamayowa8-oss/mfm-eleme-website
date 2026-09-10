@@ -1,8 +1,11 @@
 ---
-layout: layouts/page.njk
+layout: layouts/resources.njk
 title: Resources
 permalink: /resources/
+links:
+  - label: "This Week's Prayer Points (PDF)"
+    url: "https://example.com/prayer-points.pdf"
 ---
-Sermon notes, prayer points, and event flyers will be listed here.
+Sermon notes, prayer points, and event flyers are listed below.
 
-*(Use the admin dashboard to upload documents and link them from this page.)*
+*(Use the admin dashboard to add, edit, or remove links and documents.)*

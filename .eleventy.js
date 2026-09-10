@@ -9,6 +9,12 @@ module.exports = function (eleventyConfig) {
     return value.replace(/\n/g, "<br>");
   });
 
+  eleventyConfig.addCollection("sermons", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("./content/sermons/*.md").sort(function (a, b) {
+      return new Date(b.data.date) - new Date(a.data.date);
+    });
+  });
+
   return {
     dir: {
       input: ".",

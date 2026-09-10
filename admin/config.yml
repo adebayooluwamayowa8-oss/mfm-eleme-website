@@ -76,6 +76,28 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
+          - label: "Links & Documents"
+            name: "links"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "URL", name: "url", widget: "string", hint: "Paste any link here \u2014 a webpage, a PDF, a document, anything." }
+
+      - label: "Giving & Offering"
+        name: "giving"
+        file: "content/giving.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro Text", name: "body", widget: "markdown" }
+          - label: "Bank Accounts"
+            name: "accounts"
+            widget: "list"
+            fields:
+              - { label: "Bank Name", name: "bank_name", widget: "string" }
+              - { label: "Account Name", name: "account_name", widget: "string" }
+              - { label: "Account Number", name: "account_number", widget: "string" }
+              - { label: "Currency (optional)", name: "currency", widget: "string", required: false }
+          - { label: "Note (optional)", name: "note", widget: "text", required: false }
 
       - label: "Contact Us"
         name: "contact"
@@ -83,3 +105,15 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "sermons"
+    label: "Sermons & Audio Messages"
+    folder: "content/sermons"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Speaker", name: "speaker", widget: "string", required: false }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Audio / Video Link", name: "audio_url", widget: "string", hint: "Paste a link to your audio file, YouTube video, or SoundCloud track." }
+      - { label: "Description", name: "body", widget: "markdown", required: false }

@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+---
+<section class="page-hero">
+  <h1>{{ title }}</h1>
+</section>
+<section class="page-body">
+  <div class="page-body-inner">
+    {{ content | safe }}
+
+    {% if accounts and accounts.length %}
+    <div class="accounts-grid">
+      {% for acc in accounts %}
+      <div class="account-card">
+        {% if acc.currency %}<span class="account-currency">{{ acc.currency }}</span>{% endif %}
+        <p class="account-bank">{{ acc.bank_name }}</p>
+        <p class="account-name">{{ acc.account_name }}</p>
+        <p class="account-number">{{ acc.account_number }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if note %}
+    <p class="giving-note">{{ note }}</p>
+    {% endif %}
+  </div>
+</section>

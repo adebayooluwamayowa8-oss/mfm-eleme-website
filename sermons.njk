@@ -1,0 +1,31 @@
+---
+layout: layouts/base.njk
+title: Sermons
+permalink: /sermons/
+---
+<section class="page-hero">
+  <h1>Sermons &amp; Audio Messages</h1>
+</section>
+<section class="page-body">
+  <div class="page-body-inner sermon-list">
+    {% if collections.sermons.length %}
+      {% for sermon in collections.sermons %}
+      <div class="sermon-item">
+        <h3>{{ sermon.data.title }}</h3>
+        <p class="sermon-meta">
+          {% if sermon.data.speaker %}{{ sermon.data.speaker }}{% endif %}
+          {% if sermon.data.date %} &middot; {{ sermon.data.date }}{% endif %}
+        </p>
+        {% if sermon.data.audio_url %}
+        <p><a href="{{ sermon.data.audio_url }}" target="_blank" rel="noopener" class="btn btn-magenta sermon-listen-btn">Listen / Watch</a></p>
+        {% endif %}
+        {% if sermon.templateContent %}
+        <div class="sermon-description">{{ sermon.templateContent | safe }}</div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    {% else %}
+      <p>No sermons have been added yet. Check back soon.</p>
+    {% endif %}
+  </div>
+</section>
