@@ -50,5 +50,8 @@ body{background:#f2edf2}
 .footer-social a{display:grid;place-items:center;width:44px;height:44px;margin:0;color:#f5e6f0;border:1px solid rgba(245,230,240,.42);border-radius:50%;background:rgba(255,255,255,.06);transition:transform .2s ease,background-color .2s ease,border-color .2s ease}
 .footer-social a:hover,.footer-social a:focus-visible{transform:translateY(-3px);background:rgba(239,171,105,.16);border-color:var(--gold);color:#fff}
 .footer-social svg{width:22px;height:22px;fill:currentColor}
+.footer-social{display:flex;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-social a{flex:0 0 44px;text-decoration:none}
+.footer-social img{display:block;width:24px;height:24px;object-fit:contain}
 @media(max-width:700px){.intro{grid-template-columns:1fr;gap:0;padding-left:clamp(20px,5vw,64px);padding-right:clamp(20px,5vw,64px)}}
 @media(prefers-reduced-motion:reduce){.footer-social a{transition:none}.footer-social a:hover,.footer-social a:focus-visible{transform:none}}
