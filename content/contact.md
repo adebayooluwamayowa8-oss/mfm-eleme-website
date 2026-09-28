@@ -1,6 +1,6 @@
 ---
-layout: layouts/page.njk
-title: Contact Us
+layout: layouts/contact.njk
+title: Contact & Visit
 permalink: /contact/
 ---
-We'd love to hear from you. Reach us using the details below, or visit us in person for any of our services.
+We would love to welcome you. Join us for a service or reach out with a question.

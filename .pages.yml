@@ -1,0 +1,231 @@
+media:
+  input: images
+  output: /images
+  categories:
+  - image
+content:
+- name: home
+  label: Welcome and photo gallery
+  type: file
+  path: content/home.md
+  format: yaml-frontmatter
+  fields:
+  - name: title
+    type: string
+  - &id001
+    name: layout
+    type: string
+    hidden: true
+  - &id002
+    name: permalink
+    type: string
+    hidden: true
+  - name: hero_video_url
+    type: string
+    label: Direct MP4 video URL
+    required: false
+    description: Leave blank for a still image. Use a public direct HTTPS MP4 URL.
+  - name: hero_video_poster
+    type: image
+    label: Welcome image and video poster
+  - name: gallery_intro
+    type: text
+  - name: gallery
+    type: object
+    label: Church photos
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{alt}'
+    fields:
+    - name: image
+      type: image
+      label: Photo
+    - name: alt
+      type: string
+      label: Photo description
+  - name: slides
+    type: object
+    label: Previous slide copy
+    list: true
+    fields:
+    - name: heading
+      type: text
+    - name: verse
+      type: text
+    - name: source
+      type: string
+    - name: image
+      type: image
+- name: settings
+  label: Church details and schedules
+  type: file
+  path: _data/settings.json
+  format: json
+  fields:
+  - name: site_name
+    type: string
+    label: Short church name
+  - name: tagline
+    type: string
+    label: Church subtitle
+  - name: description
+    type: text
+    label: Search description
+  - name: welcome_text
+    type: text
+    label: Welcome message
+  - name: logo
+    type: image
+    label: Church logo
+  - name: phone
+    type: string
+    label: Phone number
+  - name: email
+    type: string
+    label: Email address
+  - name: address_line1
+    type: string
+    label: Church name at address
+  - name: address_line2
+    type: string
+    label: Street or landmark
+  - name: address_city
+    type: string
+    label: Town and state
+  - name: postal_code
+    type: string
+    label: Postal code
+  - name: map_query
+    type: string
+    label: Map search or coordinates
+  - name: live_url
+    type: string
+    label: Watch live link
+  - name: facebook
+    type: string
+    label: Facebook link
+  - name: youtube
+    type: string
+    label: YouTube link
+  - name: tiktok
+    type: string
+    label: TikTok link
+  - name: services
+    type: object
+    label: In-person services
+    list: true
+    fields:
+    - name: text
+      type: text
+      label: Service and time
+  - name: broadcasts
+    type: object
+    label: Online broadcasts
+    list: true
+    fields:
+    - name: text
+      type: text
+      label: Broadcast and time
+- name: sermons
+  label: Sermons and messages
+  type: collection
+  path: content/sermons
+  format: yaml-frontmatter
+  fields:
+  - name: title
+    type: string
+  - name: speaker
+    type: string
+    required: false
+  - name: date
+    type: date
+  - name: audio_url
+    type: string
+    label: Audio or video URL
+  - name: body
+    type: rich-text
+    required: false
+- name: giving
+  label: Giving and bank accounts
+  type: file
+  path: content/giving.md
+  format: yaml-frontmatter
+  fields:
+  - name: title
+    type: string
+  - *id001
+  - *id002
+  - name: accounts
+    type: object
+    list: true
+    fields:
+    - name: bank_name
+      type: string
+    - name: account_name
+      type: string
+    - name: account_number
+      type: string
+    - name: currency
+      type: string
+  - name: note
+    type: text
+  - &id003
+    name: body
+    type: rich-text
+- name: pages
+  label: Other pages
+  type: group
+  items:
+  - name: about
+    label: Who we are
+    type: file
+    path: content/who-we-are.md
+    format: yaml-frontmatter
+    fields:
+    - name: title
+      type: string
+    - *id001
+    - *id002
+    - *id003
+  - name: ministries
+    label: What we do
+    type: file
+    path: content/what-we-do.md
+    format: yaml-frontmatter
+    fields:
+    - name: title
+      type: string
+    - *id001
+    - *id002
+    - *id003
+  - name: resources
+    label: Resources
+    type: file
+    path: content/resources.md
+    format: yaml-frontmatter
+    fields:
+    - name: title
+      type: string
+    - *id001
+    - *id002
+    - name: links
+      type: object
+      list: true
+      fields:
+      - name: label
+        type: string
+      - name: url
+        type: string
+    - *id003
+  - name: contact
+    label: Contact page introduction
+    type: file
+    path: content/contact.md
+    format: yaml-frontmatter
+    fields:
+    - name: title
+      type: string
+    - *id001
+    - *id002
+    - *id003

@@ -11,4 +11,3 @@ We host weekly services, prayer programs, and deliverance sessions, including:
 - Prophetic Prayer Hour (Tuesdays)
 - One Hour Deliverance Prayer (Daily)
 
-*(Edit this page to describe your ministries, outreach programs, and departments in more detail.)*

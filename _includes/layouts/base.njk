@@ -1,71 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{ title }} | Mountain of Fire and Miracles Ministries — Eleme</title>
-<link rel="icon" href="{{ settings.logo }}">
-<link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-
-<header>
-  <div class="header-row">
-    <a href="/" class="logo-badge" style="background-image:url('{{ settings.logo }}')" aria-label="MFM Eleme home"></a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-    <nav id="mainNav">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/who-we-are/">Who We Are</a></li>
-        <li><a href="/what-we-do/">What We Do</a></li>
-        <li><a href="/sermons/">Sermons</a></li>
-        <li><a href="/resources/">Resources</a></li>
-        <li><a href="/giving/">Giving</a></li>
-        <li><a href="/contact/">Contact Us</a></li>
-      </ul>
-      <div class="nav-buttons">
-        <a href="#live" class="btn btn-white">Join Us Live</a>
-        <a href="#worship" class="btn btn-magenta">Worship With Us</a>
-      </div>
-    </nav>
-  </div>
-</header>
-
-{{ content | safe }}
-
-<footer class="contact" id="contact">
-  <div class="block">
-    <h2>CONTACT</h2>
-    <p>Phone: {{ settings.phone }}</p>
-    <p>Email: {{ settings.email }}</p>
-  </div>
-  <div class="block">
-    <p>{{ settings.address_line1 }}</p>
-    <p>{{ settings.address_line2 }}</p>
-    <p>{{ settings.address_city }}</p>
-    <p>{{ settings.postal_code }}</p>
-    <div class="social-icons">
-      <a href="{{ settings.youtube }}" class="yt" target="_blank" rel="noopener" aria-label="YouTube">▶</a>
-      <a href="{{ settings.facebook }}" class="fb" target="_blank" rel="noopener" aria-label="Facebook">f</a>
-      <a href="{{ settings.tiktok }}" class="tt" target="_blank" rel="noopener" aria-label="TikTok">♪</a>
-    </div>
-  </div>
-</footer>
-
-<script src="/js/main.js"></script>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", function (user) {
-      if (!user) {
-        window.netlifyIdentity.on("login", function () {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
-</body>
-</html>
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#47122d">
+<meta name="description" content="{{ settings.description }}">
+<title>{% if title == 'Home' %}{{ settings.site_name }}{% else %}{{ title }} | {{ settings.site_name }}{% endif %}</title>
+<link rel="icon" href="{{ settings.logo }}"><link rel="stylesheet" href="/css/style.css">
+</head><body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="header-row">
+<a href="/" class="brand" aria-label="{{ settings.site_name }} home"><img src="{{ settings.logo }}" alt="" width="50" height="50"><span><strong>{{ settings.site_name }}</strong><small>South-South 6 · Eleme</small></span></a>
+<button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
+<nav id="mainNav" aria-label="Main navigation"><ul>
+<li><a href="/">Home</a></li><li><a href="/who-we-are/">About</a></li><li><a href="/what-we-do/">Ministries</a></li><li><a href="/sermons/">Sermons</a></li><li><a href="/gallery/">Gallery</a></li><li><a href="/resources/">Resources</a></li><li><a href="/giving/">Giving</a></li><li><a href="/contact/">Visit us</a></li>
+</ul><a class="nav-live" href="{{ settings.live_url }}" target="_blank" rel="noopener noreferrer">Watch live <span aria-hidden="true">↗</span></a></nav>
+</div></header>
+<main id="main">{{ content | safe }}</main>
+<footer class="site-footer"><div class="footer-inner"><div><img src="{{ settings.logo }}" alt="" width="48" height="48"><h2>{{ settings.site_name }}</h2><p>{{ settings.tagline }}</p><p>{{ settings.welcome_text }}</p></div><div><h2>Explore</h2><a href="/who-we-are/">About the church</a><a href="/sermons/">Messages</a><a href="/gallery/">Photo gallery</a><a href="/giving/">Give</a></div><div><h2>Visit & connect</h2><p>{{ settings.address_line2 }}, {{ settings.address_city }}</p>{% if settings.phone and settings.phone != '+234' %}<a href="tel:{{ settings.phone }}">{{ settings.phone }}</a>{% endif %}<a href="mailto:{{ settings.email }}">{{ settings.email }}</a><div class="footer-social"><a href="{{ settings.youtube }}" target="_blank" rel="noopener noreferrer">YouTube</a><a href="{{ settings.facebook }}" target="_blank" rel="noopener noreferrer">Facebook</a><a href="{{ settings.tiktok }}" target="_blank" rel="noopener noreferrer">TikTok</a></div></div></div><div class="footer-bottom">© 2026 {{ settings.site_name }} · <a href="/admin/">Staff editing</a></div></footer>
+<script src="/js/main.js" defer></script></body></html>

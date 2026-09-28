@@ -7,4 +7,3 @@ Mountain of Fire and Miracles Ministries (MFM) Eleme is the South South 6 Region
 
 We are a Bible-believing, praying church committed to leading people into a genuine relationship with God through prayer, the Word, and deliverance ministry.
 
-*(Edit this page from the admin dashboard to add your church's full history, leadership team, and vision statement.)*

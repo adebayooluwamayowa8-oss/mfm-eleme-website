@@ -1,56 +1,12 @@
 ---
 layout: layouts/base.njk
 ---
-<section class="hero" id="home">
-  {% for slide in slides %}
-  <div class="hero-slide {% if loop.first %}active{% endif %}" style="background-image:url('{{ slide.image }}')">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>{{ slide.heading | nl2br | safe }}</h1>
-      <p class="verse">{{ slide.verse }}</p>
-      <span class="verse-source">{{ slide.source }}</span>
-      <div class="cta-group">
-        <a href="#live" class="btn btn-magenta">Join Us Live</a>
-        <a href="#worship" class="btn btn-orange-outline-onimage">Worship With Us</a>
-      </div>
-    </div>
-  </div>
-  {% endfor %}
-  <div class="logo-float" style="background-image:url('{{ settings.logo }}')"></div>
+<section class="hero" aria-label="Welcome to MFM Eleme">
+<div class="hero-media" style="background-image:url('{{ hero_video_poster }}')">
+{% if hero_video_url %}<video autoplay muted loop playsinline preload="none" poster="{{ hero_video_poster }}" aria-hidden="true"><source src="{{ hero_video_url }}" type="video/mp4"></video>{% endif %}
+</div><div class="hero-shade"></div><div class="hero-inner"><p class="eyebrow light">Mountain of Fire and Miracles Ministries · Eleme</p><h1>Welcome to a place of <em>prayer and purpose.</em></h1><p class="hero-copy">{{ settings.welcome_text }}</p><div class="hero-actions"><a class="button button-accent" href="/contact/">Plan your visit <span aria-hidden="true">↗</span></a><a class="button button-outline" href="{{ settings.live_url }}" target="_blank" rel="noopener noreferrer">Join us live</a></div></div><span class="hero-index">01 / WELCOME</span>
 </section>
-<div class="hero-spacer"></div>
-
-<section class="info-section">
-  <div class="info-card">
-    <div class="info-card-title">ONLINE SERVICES</div>
-    <div class="info-card-body">
-      {% for s in settings.services %}<p>{{ s.text }}</p>{% endfor %}
-      <div class="social-icons">
-        <a href="{{ settings.youtube }}" class="yt" target="_blank" rel="noopener" aria-label="YouTube">▶</a>
-        <a href="{{ settings.facebook }}" class="fb" target="_blank" rel="noopener" aria-label="Facebook">f</a>
-        <a href="{{ settings.tiktok }}" class="tt" target="_blank" rel="noopener" aria-label="TikTok">♪</a>
-      </div>
-      <div class="info-card-cta"><a href="#live" class="btn btn-magenta">Join Us Live</a></div>
-    </div>
-  </div>
-
-  <div class="info-card">
-    <div class="info-card-title">ONLINE BROADCASTS</div>
-    <div class="info-card-body">
-      {% for b in settings.broadcasts %}<p>{{ b.text }}</p>{% endfor %}
-      <div class="social-icons">
-        <a href="{{ settings.youtube }}" class="yt" target="_blank" rel="noopener" aria-label="YouTube">▶</a>
-        <a href="{{ settings.facebook }}" class="fb" target="_blank" rel="noopener" aria-label="Facebook">f</a>
-        <a href="{{ settings.tiktok }}" class="tt" target="_blank" rel="noopener" aria-label="TikTok">♪</a>
-      </div>
-      <div class="info-card-cta"><a href="#live" class="btn btn-magenta">Join Us Live</a></div>
-    </div>
-  </div>
-</section>
-
-<section class="gallery-section">
-  <div class="gallery-title">OUR CHURCH</div>
-  <div class="gallery-grid">
-    {% for g in gallery %}<img src="{{ g.image }}" alt="Mountain of Fire and Miracles Ministries, Eleme">{% endfor %}
-  </div>
-</section>
+<section class="intro content-width" aria-labelledby="intro-title"><div><p class="eyebrow">You belong here</p><h2 id="intro-title">There is room for you at the mountain.</h2></div><div><p>Join us in Eleme for heartfelt worship, the Word of God and prayer. Whether this is your first visit or you worship with us every week, we are glad you are here.</p><a class="text-link" href="/who-we-are/">Get to know us <span aria-hidden="true">↗</span></a></div></section>
+<section class="gatherings" id="worship"><div class="content-width"><div class="section-heading"><div><p class="eyebrow">Come together</p><h2>Gather with us</h2></div><p>Find a time to worship, pray and connect.</p></div><div class="gathering-grid"><article class="gathering-card"><span class="card-number">01 / IN PERSON</span><h3>Services at Eleme</h3>{% for s in settings.services %}<p>{{ s.text }}</p>{% endfor %}<a class="text-link" href="/contact/">Get directions ↗</a></article><article class="gathering-card dark-card"><span class="card-number">02 / ONLINE</span><h3>Prayer & broadcasts</h3>{% for b in settings.broadcasts %}<p>{{ b.text }}</p>{% endfor %}<a class="text-link" href="{{ settings.live_url }}" target="_blank" rel="noopener noreferrer">Watch online ↗</a></article></div></div></section>
+<section class="gallery-section content-width" aria-labelledby="gallery-title"><div class="section-heading"><div><p class="eyebrow">Life at MFM Eleme</p><h2 id="gallery-title">Our church, in moments</h2></div><a class="text-link" href="/gallery/">View the gallery ↗</a></div><p class="section-intro">{{ gallery_intro }}</p><div class="gallery-grid">{% for g in gallery %}{% if loop.index <= 5 %}<a href="/gallery/" class="gallery-tile"><img src="{{ g.image }}" alt="{{ g.alt or 'Church gathering at MFM Eleme' }}" loading="lazy"></a>{% endif %}{% endfor %}</div></section>
+<section class="visit-strip"><div class="content-width visit-strip-inner"><div><p class="eyebrow light">We would love to see you</p><h2>Find your way to us.</h2><p>{{ settings.address_line2 }}, {{ settings.address_city }}</p></div><a class="button button-accent" href="/contact/">Plan your visit ↗</a></div></section>

@@ -1,0 +1,7 @@
+---
+layout: layouts/base.njk
+title: Gallery
+permalink: /gallery/
+---
+<section class="page-hero"><p class="eyebrow light">Life at MFM Eleme</p><h1>Our photo gallery</h1><p>Moments of faith and fellowship.</p></section>
+<section class="gallery-page content-width"><div class="gallery-page-grid">{% for g in collections.all %}{% if g.url == '/' %}{% for photo in g.data.gallery %}<figure><img src="{{ photo.image }}" alt="{{ photo.alt or 'Church gathering at MFM Eleme' }}" loading="lazy"><figcaption>{{ photo.alt or 'MFM Eleme church family' }}</figcaption></figure>{% endfor %}{% endif %}{% endfor %}</div></section>
