@@ -28,3 +28,27 @@
 @media(max-width:700px){.gallery-card:nth-child(3n+1){grid-row:auto}.gallery-card:nth-child(3n+1) .gallery-photo,.gallery-card .gallery-photo{height:220px}.photo-viewer-inner{padding:62px 6px 28px;gap:2px;grid-template-columns:40px minmax(0,1fr) 40px}.viewer-arrow{width:38px;height:46px}.photo-viewer figure img{max-height:calc(100vh - 170px)}}
 @media(max-width:460px){.gallery-card:nth-child(3n+1) .gallery-photo,.gallery-card .gallery-photo{height:auto;aspect-ratio:4/3}.gallery-page-grid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.gallery-card,.photo-viewer[open]{animation:none}.gallery-tile img,.gallery-photo img,.gallery-zoom{transition:none}}
+
+/* Calm interaction for calls to action, without icon characters. */
+.button,.text-link,.nav-live{transition:transform .22s ease,background-color .22s ease,color .22s ease,text-decoration-color .22s ease}
+.button:hover,.button:focus-visible{transform:translateY(-2px)}
+.button-accent:hover,.button-accent:focus-visible{background:#ffd2a0}
+.text-link:hover,.text-link:focus-visible{text-decoration-color:transparent}
+@media(prefers-reduced-motion:reduce){.button,.text-link,.nav-live{transition:none}.button:hover,.button:focus-visible{transform:none}}
+/* A quiet plum and pearl finish for the light sections of the site. */
+body{background:#f2edf2}
+.intro,.gallery-section{max-width:none;background:radial-gradient(ellipse at 83% 8%,rgba(166,108,157,.25),transparent 43%),radial-gradient(ellipse at 8% 88%,rgba(239,171,105,.13),transparent 42%),linear-gradient(135deg,#251423 0%,#361a30 57%,#21131f 100%);color:#f8f0f6}
+.intro{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:8vw;padding-left:max(clamp(20px,5vw,64px),calc((100vw - 1240px)/2 + 64px));padding-right:max(clamp(20px,5vw,64px),calc((100vw - 1240px)/2 + 64px))}
+.intro .eyebrow,.gallery-section .eyebrow{color:#f6bd87}
+.intro .text-link,.gallery-section .text-link{color:#ffd4a9}
+.gatherings{background:linear-gradient(145deg,#eee4ee,#f6eff1 52%,#e8dae6)}
+.gathering-card{background:rgba(255,255,255,.78);border:1px solid rgba(107,53,88,.13);box-shadow:0 18px 50px rgba(71,18,45,.07)}
+.gathering-card.dark-card{background:var(--plum);border-color:transparent}
+.gallery-section .section-intro{color:#e5d6e1}
+.gallery-page figure,.account-card{background:#fff9fc}
+.footer-social{gap:12px;margin-top:24px}
+.footer-social a{display:grid;place-items:center;width:44px;height:44px;margin:0;color:#f5e6f0;border:1px solid rgba(245,230,240,.42);border-radius:50%;background:rgba(255,255,255,.06);transition:transform .2s ease,background-color .2s ease,border-color .2s ease}
+.footer-social a:hover,.footer-social a:focus-visible{transform:translateY(-3px);background:rgba(239,171,105,.16);border-color:var(--gold);color:#fff}
+.footer-social svg{width:22px;height:22px;fill:currentColor}
+@media(max-width:700px){.intro{grid-template-columns:1fr;gap:0;padding-left:clamp(20px,5vw,64px);padding-right:clamp(20px,5vw,64px)}}
+@media(prefers-reduced-motion:reduce){.footer-social a{transition:none}.footer-social a:hover,.footer-social a:focus-visible{transform:none}}
