@@ -25,6 +25,18 @@ content:
     label: Direct MP4 video URL
     required: false
     description: Leave blank for a still image. Use a public direct HTTPS MP4 URL.
+  - name: hero_videos
+    type: object
+    label: Welcome background video sequence
+    description: Add direct MP4 links in playback order. The first video plays on arrival; the sequence loops automatically.
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{url}'
+    fields:
+    - name: url
+      type: string
+      label: Direct MP4 URL or /images/filename.mp4
   - name: hero_video_poster
     type: image
     label: Welcome image and video poster
@@ -188,6 +200,26 @@ content:
     - *id001
     - *id002
     - *id003
+  - name: leadership
+    label: Worldwide leadership page
+    type: file
+    path: content/leadership.njk
+    format: yaml-frontmatter
+    fields:
+    - name: title
+      type: string
+    - *id001
+    - *id002
+  - name: live
+    label: Watch live page
+    type: file
+    path: content/live.njk
+    format: yaml-frontmatter
+    fields:
+    - name: title
+      type: string
+    - *id001
+    - *id002
   - name: ministries
     label: What we do
     type: file
