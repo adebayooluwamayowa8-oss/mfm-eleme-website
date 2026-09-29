@@ -139,6 +139,44 @@ content:
     - name: text
       type: text
       label: Broadcast and time
+- name: leadership_details
+  label: Daddy & Mummy G.O. profiles
+  type: file
+  path: _data/leadership.json
+  format: json
+  fields:
+  - name: go
+    type: object
+    label: Daddy G.O.
+    fields:
+    - name: name
+      type: string
+      label: Name
+    - name: role
+      type: string
+      label: Role
+    - name: photo
+      type: image
+      label: Photograph
+    - name: biography
+      type: text
+      label: Biography
+  - name: wife
+    type: object
+    label: Mummy G.O.
+    fields:
+    - name: name
+      type: string
+      label: Name
+    - name: role
+      type: string
+      label: Role
+    - name: photo
+      type: image
+      label: Photograph
+    - name: biography
+      type: text
+      label: Biography
 - name: sermons
   label: Sermons and messages
   type: collection

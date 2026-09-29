@@ -15,4 +15,3 @@ We desire to see lives transformed through faith in Christ and people equipped t
 
 Our local expression of that mission is to welcome our neighbours in Eleme into a community of worship, prayer and the Word.
 
-[Read our beliefs](/our-beliefs/) · [Join us in Eleme](/contact/)

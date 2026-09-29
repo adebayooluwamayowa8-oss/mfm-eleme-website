@@ -13,4 +13,3 @@ MFM held its first church service on 24 April 1994. The ministry subsequently ex
 
 MFM Eleme serves the Ogale Eleme community as South-South 6 Regional Headquarters. For the story of this region's founding and milestones, church leadership can add a locally verified timeline here.
 
-[Explore our mission](/mission-and-vision/) · [Plan your visit](/contact/)

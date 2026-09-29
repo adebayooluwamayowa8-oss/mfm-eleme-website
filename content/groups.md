@@ -17,4 +17,3 @@ MFM Worldwide has a wide range of groups and ministries that bring people togeth
 
 **Please ask the Eleme church office which groups currently meet locally** and how to join. Group names and meeting times can be added here when the local team confirms them.
 
-[Get in touch](/contact/) · [Explore ministries](/what-we-do/)

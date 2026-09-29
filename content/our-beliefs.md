@@ -16,4 +16,3 @@ Our faith is grounded in the Bible and centred on Jesus Christ. As part of MFM W
 
 This is a short summary of the MFM Worldwide statement of faith. Please contact us if you would like to learn more or speak with someone at MFM Eleme.
 
-[Explore our mission](/mission-and-vision/) · [Contact us](/contact/)
