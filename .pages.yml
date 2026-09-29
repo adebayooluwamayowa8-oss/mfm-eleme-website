@@ -199,7 +199,6 @@ content:
       type: string
     - *id001
     - *id002
-    - *id003
   - name: leadership
     label: Worldwide leadership page
     type: file
@@ -220,6 +219,50 @@ content:
       type: string
     - *id001
     - *id002
+  - name: history
+    label: History
+    type: file
+    path: content/history.md
+    format: yaml-frontmatter
+    fields:
+    - name: title
+      type: string
+    - *id001
+    - *id002
+    - *id003
+  - name: mission-and-vision
+    label: Mission & Vision
+    type: file
+    path: content/mission-and-vision.md
+    format: yaml-frontmatter
+    fields:
+    - name: title
+      type: string
+    - *id001
+    - *id002
+    - *id003
+  - name: our-beliefs
+    label: Our Beliefs
+    type: file
+    path: content/our-beliefs.md
+    format: yaml-frontmatter
+    fields:
+    - name: title
+      type: string
+    - *id001
+    - *id002
+    - *id003
+  - name: groups
+    label: Groups
+    type: file
+    path: content/groups.md
+    format: yaml-frontmatter
+    fields:
+    - name: title
+      type: string
+    - *id001
+    - *id002
+    - *id003
   - name: ministries
     label: What we do
     type: file

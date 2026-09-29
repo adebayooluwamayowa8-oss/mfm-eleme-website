@@ -1,20 +1,7 @@
 ---
-layout: layouts/page.njk
-title: About MFM Eleme
+layout: layouts/base.njk
+title: Who We Are
 permalink: /who-we-are/
 ---
-Mountain of Fire and Miracles Ministries (MFM) Eleme is the South-South 6 Regional Headquarters, located opposite New Town Junction in Ogale Eleme, Rivers State. We welcome you to worship, pray and grow with us.
-
-## Part of MFM Worldwide
-
-MFM Worldwide was founded by Dr Daniel Kolawole Olukoya. The ministry is known for prayer, teaching from Scripture, evangelism, holiness and deliverance. Our Eleme church shares that heritage while serving our local community.
-
-[Meet the General Overseer and his wife](/leadership/) · [Explore ministries at Eleme](/what-we-do/)
-
-## Our faith
-
-We believe in the authority of Scripture, salvation through Jesus Christ, the work of the Holy Spirit, prayer and a life of holiness. For the full statements of faith and mission, read the official [MFM beliefs](https://www.mountainoffire.org/About/Beliefs) and [mission and vision](https://www.mountainoffire.org/About/Mission).
-
-## Join us in Eleme
-
-We would love to welcome you in person. [See our local service times and directions](/contact/), or [find a live service](/live/).
+<section class="page-hero about-hero"><p class="eyebrow light">MFM Eleme · South-South 6</p><h1>Who we are</h1><p>Discover the faith, story and people behind the Mountain of Fire and Miracles Ministries.</p></section>
+<section class="about-overview content-width" aria-label="About the ministry"><div class="about-lead"><p class="eyebrow">Welcome to the mountain</p><h2>Rooted in prayer. Here for Eleme.</h2><p>Mountain of Fire and Miracles Ministries (MFM) Eleme is the South-South 6 Regional Headquarters, opposite New Town Junction in Ogale Eleme, Rivers State. We are part of MFM Worldwide, gathering for worship, the Word and prayer.</p></div><div class="about-cards"><a href="/history/"><span>01 / OUR STORY</span><h3>History</h3><p>How MFM began and grew into a worldwide ministry.</p></a><a href="/mission-and-vision/"><span>02 / OUR PURPOSE</span><h3>Mission &amp; Vision</h3><p>Our calling to share the gospel and equip believers.</p></a><a href="/our-beliefs/"><span>03 / OUR FAITH</span><h3>Our Beliefs</h3><p>The Christian convictions that shape our worship and life.</p></a><a href="/groups/"><span>04 / OUR PEOPLE</span><h3>Groups</h3><p>Explore ways to connect, serve and grow together.</p></a><a class="about-feature" href="/leadership/"><span>05 / WORLDWIDE LEADERSHIP</span><h3>Daddy &amp; Mummy G.O.</h3><p>Meet Dr Daniel Kolawole Olukoya and Pastor (Mrs) Shade Olukoya and read their biographies here.</p></a></div></section>
