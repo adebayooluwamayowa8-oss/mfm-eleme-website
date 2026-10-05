@@ -1,18 +1,22 @@
 ---
-layout: layouts/page.njk
 title: Our Beliefs
+layout: layouts/page.njk
 permalink: /our-beliefs/
 ---
-Our faith is grounded in the Bible and centred on Jesus Christ. As part of MFM Worldwide, we affirm these core beliefs:
+# **WHAT WE BELIEVE**
 
-- The Scriptures are the inspired Word of God and the foundation for faith and life.
-- There is one God: Father, Son and Holy Spirit.
-- Salvation is through the redeeming work of Jesus Christ and the work of the Holy Spirit.
-- Believers are called to holiness, prayer and a daily walk with God.
-- The Holy Spirit empowers the church for worship, witness and service.
-- The church practises water baptism and the Lord's Supper.
-- God calls the church to proclaim the gospel and minister to those in need.
-- We look forward to Christ's return, the final judgment and the new heaven and earth.
-
-This is a short summary of the MFM Worldwide statement of faith. Please contact us if you would like to learn more or speak with someone at MFM Eleme.
+- The Scriptures are the inspired Word of God; the only basis for our faith and fellowship
+- The One True God, ETERNAL EXISTENT in three Persons. God The Father, God The Son and The Holy Spirit
+- The fall and deprivation of mankind, necessitating redemption through the Blood of Jesus Christ
+- The Salvation of Mankind is through the Redeeming Work of Jesus Christ and the Regenerative Work of the Holy Spirit. Sanctification is seen as an act of separation from that which is evil
+- The Baptism of the Holy Spirit - Acts 2:4; 10:44 and 19:1-6
+- Restitution for past wrongs where possible
+- The Ordinance of the Church, the Lord's Supper and Water Baptism
+- The Church Universal, both visible and invisible
+- The Ministry, divinely called and scripturally ordained as that approved of Almighty God
+- Divine healing as provided by the Lord Jesus Christ
+- The Rapture ushering all believers into the Marriage Supper of the Lamb, and the second advent of the Lord Jesus Christ when He will physically land on the earth
+- The Millennial Reign of Christ
+- The Final Judgment
+- The New Heaven and Earth
 
