@@ -1,4 +1,8 @@
 {
+  "site_name": "MFM Eleme",
+  "tagline": "South-South 6 Regional Headquarters · Eleme, Rivers State",
+  "description": "Worship, prayer and community at Mountain of Fire and Miracles Ministries, South-South 6 Regional Headquarters, Eleme.",
+  "welcome_text": "A place of Deep Worship, Word, Prayer, Deliverance & Prophetic Encounter. We look forward to welcoming you.",
   "logo": "/images/logo.png",
   "phone": "+234",
   "email": "mfmeleme@gmail.com",
@@ -6,10 +10,11 @@
   "address_line2": "Opposite New Town Junction",
   "address_city": "Ogale Eleme, Rivers State",
   "postal_code": "511101",
+  "map_query": "MFM Eleme, Opposite New Town Junction, Ogale Eleme, Rivers State, Nigeria",
+  "live_url": "https://www.youtube.com/@PastorchucksDamiro/live",
   "facebook": "https://www.facebook.com/pstchucksdamiro",
   "youtube": "https://www.youtube.com/@PastorchucksDamiro",
   "tiktok": "https://www.tiktok.com/@pastorchucksdamiroo",
-  "instagram": "https://www.instagram.com/pastorchucksdamiro/",
   "services": [
     {
       "text": "Come join us this Sunday at 7:00 am (WAT) for a refreshing time in God's presence."
@@ -28,11 +33,5 @@
     {
       "text": "One Hour Deliverance Prayer – Everyday 12:00am"
     }
-  ],
-  "site_name": "MFM Eleme",
-  "tagline": "South-South 6 Regional Headquarters · Eleme, Rivers State",
-  "description": "Worship, prayer and community at Mountain of Fire and Miracles Ministries, South-South 6 Regional Headquarters, Eleme.",
-  "map_query": "MFM Eleme, Opposite New Town Junction, Ogale Eleme, Rivers State, Nigeria",
-  "welcome_text": "A place for prayer, worship and the Word. We look forward to welcoming you.",
-  "live_url": "https://www.youtube.com/@PastorchucksDamiro/live"
+  ]
 }
