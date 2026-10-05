@@ -5,6 +5,7 @@ permalink: /
 hero_video_url: https://mfm-eleme-website.pages.dev/images/mfm-eleme-welcome-hd.mp4
 hero_videos:
   - url: /images/mfm-eleme-welcome-hd.mp4
+  - {}
 hero_video_poster: /images/hero-1.jpg
 gallery_intro: Moments from our church family
 gallery:
